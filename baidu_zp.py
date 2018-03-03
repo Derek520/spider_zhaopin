@@ -70,7 +70,7 @@ for i in range(0,39):
         print('页面异常')
         continue
     for q in range(20):
-        list2 =[]
+
         try:
             dict = {'公司名称':data['data']['main']['data']['disp_data'][q]['officialname'],
                     '所属行业':data['data']['main']['data']['disp_data'][q]['industry'],
@@ -92,5 +92,5 @@ for i in range(0,39):
         list1.append(dict)
 
     data1 = pandas.DataFrame(list1)
-    data1.to_csv('招聘信息.csv',encoding='gb18030')
+    data1.to_csv('xxx.csv',encoding='gb18030')
 print(num)
